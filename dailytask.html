@@ -25,11 +25,12 @@ body {
     font-family: 'Cabin','Arial', sans-serif;
     font-weight: 400;
     font-size: 12px;
+  margin:0;
 
 }
 .container{
-    margin: 0 auto;
-    max-width:1200px;
+  width:50%;
+
 }
 a,
 a:link {
@@ -50,8 +51,7 @@ h1 {
 }
 #to-do-app {
     position: relative;
-    max-width: 600px;
-    margin: 50px auto;
+
     padding:50px 0 25px;
     border-radius: 15px;
       background-color: #f2f0e7;
@@ -66,7 +66,7 @@ h1 {
     transition: all 250ms ease-in-out;
 }
 .tasker-container{
-    min-height:300px;
+    max-height:500px;
 }
 /* Form elements */
 input[type="text"] {
@@ -102,7 +102,7 @@ button:active {
 }
 
 #add-task{
-    background-color: #FB3357;
+    background-color: #000;
     color: #fff;
     width:60px;
 }
@@ -117,8 +117,8 @@ button:active {
     font-weight: 200;
     font-family: 'Work Sans','Arial', sans-serif;
     margin: 25px auto;
-    width: 60px;
-  height:60px;
+    width: 75px;
+  height:75px;
     transition: background 200ms ease-in;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -128,7 +128,7 @@ button:active {
             user-select: none;
 }
 .add-task-button:hover{
-    background-color: #FB3357;
+    background-color: #000;
     color: #fff;
 }
 .add-task-button-visible{
@@ -191,6 +191,7 @@ button#submit{
     right:0;
     padding: 15px;
     font-size: 32px;
+  color:#fff;
 }
 .delete-button{
     opacity: 0;
