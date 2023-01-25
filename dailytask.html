@@ -42,12 +42,16 @@ h1 {
     font-weight: 700;
     text-align: center;
     color: #000;
+  font-family: 'Kanit', sans-serif;
+  font-weight:300;
+  text-transform:uppercase;
 }
 .title-date{
     color: #000;
     text-align: center;
     display: block;
     font-size: 14px;
+  font-family: 'Kanit', sans-serif;
 }
 #to-do-app {
     position: relative;
@@ -70,11 +74,15 @@ h1 {
 }
 /* Form elements */
 input[type="text"] {
-    height: 56px;
-    padding: 10px;
-    font-size: 24px;
+  line-height:40px;
+    font-size: 14px;
     box-sizing: border-box;
     width:calc( 100% - 63px );
+  font-family: 'Kanit', sans-serif;
+    border-color: transparent;
+  border-style: none;
+      padding: 10px;
+  vertical-align:center;
 }
 :focus {
   outline-color: transparent;
@@ -82,15 +90,17 @@ input[type="text"] {
 }
 button {
     position: relative;
-    height: 56px;
+
     padding: 10px;
     border: none;
-    background-color: tomato;
-    font-size: 24px;
     cursor: pointer;
     outline: none;
     color: white;
-    box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+  font-size:24px;
+  line-height:40px;
+  vertical-align:center;
+  top:5px;
+  right:5px;
 }
 
 button:hover {
@@ -180,10 +190,10 @@ button#submit{
     float: right;
     cursor: pointer;
     transition: all 250ms ease-in-out;
-    color: #A09FA4;
+    color: #000;
 }
 .fa-check-circle{
-    color:#D8D8DA;
+    color:#000;
 }
 #clear-list{
     position: absolute;
@@ -212,9 +222,12 @@ input[type=checkbox]{
 }
 input[type=checkbox] + label {
   color: rgb(129, 128, 133);
+  font-family: 'Kanit', sans-serif;
+  font-weight:300;
+  color:#000;
 } 
 input[type=checkbox]:checked + label {
-    color: #D8D8DA;
+    color: #000;
     text-decoration: line-through;
 } 
 </style>
@@ -399,3 +412,7 @@ var TodoApp = ( function() {
 TodoApp.init(); // Run application
 
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Rozha+One&display=swap" rel="stylesheet">
+
